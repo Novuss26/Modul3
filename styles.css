@@ -1,0 +1,51 @@
+/* Mengatur layout dasar */
+.container {
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    max-width: 600px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Gaya untuk bagian gambar */
+.gambar {
+    width: 150px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+/* Gaya untuk bagian konten artikel */
+.konten {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Gaya untuk judul artikel */
+.judul {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Gaya untuk potongan artikel */
+.potongan-artikel {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+
+/* Gaya untuk tombol baca selengkapnya */
+.baca-selengkapnya {
+    text-align: right;
+    padding: 5px;
+    font-size: 14px;
+    color: blue;
+    cursor: pointer;
+}

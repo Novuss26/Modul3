@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+.form-container {
+    width: 500px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 180px 1fr; /* Labels are 180px wide, inputs fill remaining space */
+    gap: 10px 20px; /* Vertical and horizontal spacing */
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 10px;
+    position: relative;
+}
+
+label::after {
+    content: ":"; /* Adds colon after label text */
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+input[type="time"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.button-group {
+    grid-column: 1 / -1; /* Buttons span both columns */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+}
+
+button[type="reset"] {
+    background-color: #777;
+}
